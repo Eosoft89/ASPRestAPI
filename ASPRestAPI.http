@@ -1,0 +1,41 @@
+@ASPRestAPI_HostAddress = http://localhost:5291
+
+GET {{ASPRestAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{ASPRestAPI_HostAddress}}/person/
+Accept: application/json
+
+###
+
+GET  {{ASPRestAPI_HostAddress}}/person/3
+Accept: application/json
+
+###
+
+POST {{ASPRestAPI_HostAddress}}/person/
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "isActive": false
+}
+
+###
+
+PUT {{ASPRestAPI_HostAddress}}/person/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Juan Carlos",
+    "isActive": false
+}
+
+###
+
+DELETE {{ASPRestAPI_HostAddress}}/person/3
+
+###
